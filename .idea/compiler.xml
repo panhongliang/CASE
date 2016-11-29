@@ -36,6 +36,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="amodel" target="1.5" />
+      <module name="CASE" target="1.5" />
       <module name="designmodel" target="1.5" />
       <module name="javacase" target="1.7" />
       <module name="loadresources" target="1.5" />

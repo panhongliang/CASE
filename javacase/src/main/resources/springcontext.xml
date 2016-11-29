@@ -28,7 +28,7 @@
             <value>classpath:a.properties</value>
         </property>
     </bean>
-    <bean id="resourcestest" class="com.phl.Resourcestest">
+    <bean id="resourcesCASE" class="com.phl.ResourcesCASE">
         <property name="key0" value="${key0}"/>
         <property name="key1" value="${key0}"/>
     </bean>
@@ -88,12 +88,12 @@
     <!--方式4在T2类中：等验证-->
 
         <!--配置静态内部类-->
-     <!--   <bean id="t1$t11" class="com.phl.test.T1$T11"/>
+     <!--   <bean id="t1$t11" class="com.phl.CASE.T1$T11"/>
         &lt;!&ndash;构造注入&ndash;&gt;
-        <bean id="t2" class="com.phl.test.T2">
+        <bean id="t2" class="com.phl.CASE.T2">
             <constructor-arg name="a" value="a"/>
             <constructor-arg name="b" value="b"/>
             <constructor-arg name="t0" ref="t0"/>
         </bean>
-    <bean class="com.phl.test.T3"/>-->
+    <bean class="com.phl.CASE.T3"/>-->
 </beans>

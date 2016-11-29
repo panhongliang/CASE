@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.phl.test</groupId>
-  <artifactId>test</artifactId>
+  <groupId>com.phl.CASE</groupId>
+  <artifactId>CASE</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>test Maven Webapp</name>
+  <name>CASE Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <modules>
     <module>loadresources</module>
@@ -26,7 +26,7 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>3.8.1</version>
-        <scope>test</scope>
+        <scope>CASE</scope>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -67,6 +67,6 @@
     </dependencies>
   </dependencyManagement>
   <build>
-    <finalName>test</finalName>
+    <finalName>CASE</finalName>
   </build>
 </project>

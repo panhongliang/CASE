@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
-        <artifactId>test</artifactId>
-        <groupId>com.phl.test</groupId>
+        <artifactId>CASE</artifactId>
+        <groupId>com.phl.CASE</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -69,7 +69,7 @@
     </dependency>
 </dependencies>
     <build>
-        <finalName>test</finalName>
+        <finalName>CASE</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
@@ -96,6 +96,6 @@
 
     <properties>
         <app.port>8081</app.port>
-        <app.warFile>test</app.warFile>
+        <app.warFile>CASE</app.warFile>
     </properties>
 </project>

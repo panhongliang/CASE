@@ -2,29 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="136d17fc-f888-4750-8c0c-550e477dcf9c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/amodel/amodel.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/designmodel/designmodel.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/javacase/javacase.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/loadresources/loadresources.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitclient/rabbitclient.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rabbitreceiver/rabbitreceiver.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CASE.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/threadresource/threadresource.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/useresourse/useresourse.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/usethreadloader/usethreadloader.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zmodel/zmodel.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amodel/pom.xml" afterPath="$PROJECT_DIR$/amodel/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/designmodel/pom.xml" afterPath="$PROJECT_DIR$/designmodel/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javacase/pom.xml" afterPath="$PROJECT_DIR$/javacase/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loadresources/pom.xml" afterPath="$PROJECT_DIR$/loadresources/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitclient/pom.xml" afterPath="$PROJECT_DIR$/rabbitclient/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rabbitreceiver/pom.xml" afterPath="$PROJECT_DIR$/rabbitreceiver/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/threadresource/pom.xml" afterPath="$PROJECT_DIR$/threadresource/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/useresourse/pom.xml" afterPath="$PROJECT_DIR$/useresourse/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usethreadloader/pom.xml" afterPath="$PROJECT_DIR$/usethreadloader/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zmodel/pom.xml" afterPath="$PROJECT_DIR$/zmodel/pom.xml" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,6 +24,7 @@
     <ignored path="$PROJECT_DIR$/usethreadloader/target/" />
     <ignored path="$PROJECT_DIR$/rabbitclient/target/" />
     <ignored path="$PROJECT_DIR$/rabbitreceiver/target/" />
+    <ignored path=".idea/libraries/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,11 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rabbitclient/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -120,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-570">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -160,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/reference/Car.java" />
-        <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/reference/TestWeakReference2.java" />
         <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/reference/TestWeakReference.java" />
         <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/reference/WeakHashMapTest.java" />
         <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/finalize/FinalizeEscapeGc.java" />
@@ -200,7 +200,6 @@
         <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/client/AsyncClientHandler.java" />
         <option value="$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/server/ReadHandler.java" />
         <option value="$PROJECT_DIR$/javacase/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/designmodel/pom.xml" />
         <option value="$PROJECT_DIR$/loadresources/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitclient/pom.xml" />
@@ -211,6 +210,9 @@
         <option value="$PROJECT_DIR$/usethreadloader/pom.xml" />
         <option value="$PROJECT_DIR$/designmodel/src/main/java/com/phl/designmodel/command/package-info.java" />
         <option value="$PROJECT_DIR$/amodel/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/test.iml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -241,6 +243,26 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="zmodel" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="javacase Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -742,6 +764,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -760,21 +785,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CASE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="designmodel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+        <subPane subId="Tests" />
       </pane>
       <pane id="Scratches">
         <subPane>
@@ -794,13 +809,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-        <subPane subId="Tests" />
-      </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -815,6 +823,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.37320045" />
     <property name="SearchEverywhereHistoryKey" value="Thread&#9;FILE&#9;file://D:/360CloudUI/Cache/1347785479/test/javacase/src/main/java/com/phl/executors/ThreadPool.java&#10;ConcurrentH&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;LinkedH&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/LinkedHashMap.java&#10;ExecutorService&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/ExecutorService.java&#10;WeakH&#9;PSI&#9;JAVA://java.util.WeakHashMap&#10;BigDe&#9;PSI&#9;JAVA://java.math.BigDecimal&#10;ScheduledExecutorS&#9;PSI&#9;JAVA://java.util.concurrent.ScheduledExecutorService&#10;AtomicInteger&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;ArrayBl&#9;PSI&#9;JAVA://java.util.concurrent.ArrayBlockingQueue&#10;Blocking&#9;PSI&#9;JAVA://java.util.concurrent.BlockingQueue&#10;LinkH&#9;PSI&#9;JAVA://java.util.LinkedHashMap&#10;Call&#9;PSI&#9;JAVA://java.util.concurrent.Callable&#10;Lock&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/java/util/concurrent/locks/Lock.java&#10;ApplicationContext&#9;PSI&#9;JAVA://org.springframework.context.ApplicationContext&#10;HelloAgent&#9;FILE&#9;file://D:/360CloudUI/Cache/1347785479/test/javacase/src/main/java/com/phl/jmx/HelloAgent.java&#10;Hel&#9;PSI&#9;JAVA://com.phl.jmx.HelloAgent&#10;AbstractQueue&#9;PSI&#9;JAVA://java.util.concurrent.locks.AbstractQueuedSynchronizer&#10;Execu&#9;PSI&#9;JAVA://com.phl.zk.Executor&#10;Lau&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/Launcher.class&#10;ClassLoader&#9;FILE&#9;jar://D:/idea/openjdk-7u40-fcs-src-b43-26_aug_2013.zip!/openjdk/jdk/src/share/classes/java/lang/ClassLoader.java&#10;La&#9;FILE&#9;jar://D:/idea/openjdk-7u40-fcs-src-b43-26_aug_2013.zip!/openjdk/jdk/src/share/classes/sun/misc/Launcher.java&#10;Laun&#9;FILE&#9;jar://D:/idea/openjdk-7u40-fcs-src-b43-26_aug_2013.zip!/openjdk/jdk/src/share/classes/sun/misc/Launcher.java&#10;Object.class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/java/lang/Object.class&#10;Syst&#9;FILE&#9;jar://D:/idea/openjdk-7u40-fcs-src-b43-26_aug_2013.zip!/openjdk/jdk/src/share/classes/java/lang/System.java&#10;L&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/Launcher.class&#10;Launcher&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/jre/lib/rt.jar!/sun/misc/Launcher.class&#10;Urlc&#9;PSI&#9;JAVA://java.net.URLClassLoader&#10;DocumentBuilderFactory&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.7.0_79/src.zip!/javax/xml/parsers/DocumentBuilderFactory.java&#10;DocumentBuilderFactoryImpl&#9;PSI&#9;JAVA://com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl&#10;ClassLoading&#9;PSI&#9;JAVA://java.lang.management.ClassLoadingMXBean" />
+    <property name="prop_add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1717,6 +1726,8 @@
       <workItem from="1480381713047" duration="2780000" />
       <workItem from="1480384568149" duration="1777000" />
       <workItem from="1480386662142" duration="2244000" />
+      <workItem from="1480396700566" duration="143000" />
+      <workItem from="1480396881056" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="abc">
       <created>1480382738405</created>
@@ -1736,7 +1747,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="541821000" />
+    <option name="totallyTimeSpent" value="542273000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1754,20 +1765,19 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3262295" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40163934" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4557377" sideWeight="0.25642964" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19969743" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40163934" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.85627836" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4557377" sideWeight="0.7435703" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24754098" sideWeight="0.7859304" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24583964" sideWeight="0.77697843" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22314675" sideWeight="0.77697843" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291874" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17540984" sideWeight="0.49092284" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.115733735" sideWeight="0.49144253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06716418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1782,6 +1792,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3878887" sideWeight="0.64523447" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.053110775" sideWeight="0.8772803" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.05970149" sideWeight="0.50855744" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17540984" sideWeight="0.49092284" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1953,8 +1964,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/client/WriteHandler.java" />
-    <entry file="file://$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/server/Server.java" />
     <entry file="file://$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/client/Client.java" />
     <entry file="file://$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/client/AsyncClientHandler.java" />
     <entry file="file://$PROJECT_DIR$/javacase/src/main/java/com/phl/io/aio/server/AsyncServerHandler.java" />
@@ -1989,7 +1998,6 @@
     <entry file="file://$PROJECT_DIR$/javacase/pom.xml" />
     <entry file="file://$PROJECT_DIR$/loadresources/pom.xml" />
     <entry file="file://$PROJECT_DIR$/rabbitreceiver/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/modules.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml" />
@@ -1997,25 +2005,10 @@
     <entry file="file://$PROJECT_DIR$/usethreadloader/pom.xml" />
     <entry file="file://$PROJECT_DIR$/zmodel/pom.xml" />
     <entry file="file://$PROJECT_DIR$/designmodel/src/main/java/com/phl/designmodel/command/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/CASE.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-570">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2045,6 +2038,46 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rabbitclient/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CASE.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="70" column="10" selection-start-line="70" selection-start-column="10" selection-end-line="70" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />

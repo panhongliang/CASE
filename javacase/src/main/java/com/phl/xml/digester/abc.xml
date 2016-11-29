@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Outer name="jay" id="123">
+    <Inner abc="abc" def="456"/>
+</Outer>

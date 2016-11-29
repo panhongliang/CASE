@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:phl="http://code.phl.com/schema/phl"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://code.phl.com/schema/phl
+        http://code.phl.com/schema/phl/phl.xsd">
+<!--    <phl:book id="bookid" name="java" />
+    <phl:people id="peopleid" name="java"/>-->
+    <!--
+        <context:annotation-config/>
+
+            他的作用是式地向 Spring 容器注册
+            AutowiredAnnotationBeanPostProcessor、CommonAnnotationBeanPostProcessor、
+            PersistenceAnnotationBeanPostProcessor 以及 RequiredAnnotationBeanPostProcessor 这 4 个BeanPostProcessor。
+            注册这4个 BeanPostProcessor的作用，就是为了你的系统能够识别相应的注解。
+            如果你想使用@Autowired注解，那么就必须事先在 Spring 容器中声明 AutowiredAnnotationBeanPostProcessor Bean。传统声明方式如下
+            <bean class="org.springframework.beans.factory.annotation. AutowiredAnnotationBeanPostProcessor "/>
+    -->
+
+    <bean id="placeholderConfig"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:a.properties</value>
+        </property>
+    </bean>
+    <bean id="resourcestest" class="com.phl.Resourcestest">
+        <property name="key0" value="${key0}"/>
+        <property name="key1" value="${key0}"/>
+    </bean>
+    <bean id="DatePatternFormat" class="com.phl.format.DatePatternFormat"/>
+    <bean id="TextLengthFormat" class="com.phl.format.TextLengthFormat"/>
+
+    <bean id="returnValueFormatInterceptor" class="com.phl.format.ReturnValueFormatInterceptor"/>
+    <bean id="getObjectService" class="com.phl.format.GetObjectServiceImpl"/>
+    <bean id="discloseafterAdvisorTranscoding" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="returnValueFormatInterceptor" />
+        <!-- 在此添加要监听的方法，没有再次添加的方法即使执行也不会触发监听 -->
+        <property name="patterns">
+            <list>
+                <!--此处不能为空，且“.*”代表模糊匹配，如想监听所有方法可以写为“.*”-->
+                <value>.*</value>
+            </list>
+        </property>
+    </bean>
+    <!--
+        id属性的值要确保整个项目的唯一
+    -->
+    <bean id="discloseautoproxyaopTranscoding" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="beanNames">
+            <list>
+                <!--需要监听的接口-->
+                <value>getObjectService</value>
+            </list>
+        </property>
+
+        <property name="interceptorNames">
+            <list>
+                <!-- 与第一个bean的id相匹配 -->
+                <value>discloseafterAdvisorTranscoding</value>
+            </list>
+        </property>
+    </bean>
+    <!--该配置项其实也包含了自动注入上述processor的功能，因此当使用 <context:component-scan/> 后，就可以将 <context:annotation-config/> 移除了。-->
+
+    <!--在配置文件中读取属性文件 多种方式-->
+<!--    <context:property-placeholder location="classpath:p1.properties"/>&lt;!&ndash;方式1&ndash;&gt;-->
+<!--       <bean id="placeholderConfig"
+             class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+              <property name="location">
+                     <value>classpath:p1.properties</value>
+              </property>
+       </bean>-->
+    <!--读取单属性文件--><!--方式2：等验证-->
+     <!--  <util:properties id="properties" location="p1.properties"/>-->
+    <!--读取多个属性文件--><!--方式3：等验证-->
+   <!--    <bean id="propertiesReader" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+           <property name="locations">
+               <list>
+                   <value>classpath:p1.properties</value>
+               </list>
+           </property>
+       </bean>-->
+    <!--方式4在T2类中：等验证-->
+
+        <!--配置静态内部类-->
+     <!--   <bean id="t1$t11" class="com.phl.test.T1$T11"/>
+        &lt;!&ndash;构造注入&ndash;&gt;
+        <bean id="t2" class="com.phl.test.T2">
+            <constructor-arg name="a" value="a"/>
+            <constructor-arg name="b" value="b"/>
+            <constructor-arg name="t0" ref="t0"/>
+        </bean>
+    <bean class="com.phl.test.T3"/>-->
+</beans>

@@ -21,12 +21,12 @@ com\phl\list\list$1.class
 com\phl\thread\ThreadJoin2.class
 com\phl\future\Work.class
 com\phl\netty\lineBasedFrameDecoder\TimeClientHandler.class
-com\phl\test\T2.class
+com\phl\CASE\T2.class
 com\phl\netty\objectDecoder\SubReqServer$1.class
 com\phl\bio\io\ReadWrite.class
 com\phl\forkjoin\Document.class
 com\phl\reference\passive\NotInitialization.class
-com\phl\Resourcestest.class
+com\phl\ResourcesCASE.class
 com\phl\format\ReturnValueFormatInterceptor.class
 com\phl\netty\tcpAttachPackage\TimeServer.class
 com\phl\netty\objectDecoder\SubReqServerHandler.class
@@ -69,7 +69,7 @@ com\phl\nio\filechannel\FileChannelTest2.class
 com\phl\nio\filechannel\FileChannelTest.class
 com\phl\netty\lengthFiledDecoder\Client$1.class
 com\phl\netty\lengthFiledDecoder\Server$1.class
-com\phl\test\T1.class
+com\phl\CASE\T1.class
 com\phl\jndi\Lookup.class
 com\phl\threadLocalAndThreadPool\T.class
 com\phl\netty\delimiterBasedFrameDecoder\ClinetHandler.class
@@ -90,12 +90,12 @@ com\phl\netty\tcpAttachPackage\TimeServer$1.class
 com\phl\hashcode\HashCodeTest.class
 com\phl\jconsole\thread\ThreadTest.class
 com\phl\reference\passive\NotInitialization2.class
-com\phl\test\T0.class
+com\phl\CASE\T0.class
 com\phl\PropertyChangeSupport\MyBean.class
 com\phl\thread\ThreadId$1.class
-com\phl\test\T1$T11.class
+com\phl\CASE\T1$T11.class
 com\phl\reference\passive\SubClass.class
-com\phl\test\T3.class
+com\phl\CASE\T3.class
 com\phl\xml\digester\Outer.class
 com\phl\Log.class
 com\phl\PropertyChangeSupport\Main$1.class
@@ -106,7 +106,7 @@ com\phl\bio\TimeServer2.class
 com\phl\netty\objectDecoder\SubReqClient$1.class
 com\phl\jconsole\thread\ThreadTest$1.class
 com\phl\zk\DataMonitor$1.class
-com\phl\test\StartUpSevlet.class
+com\phl\CASE\StartUpSevlet.class
 com\phl\gc\GcTest.class
 com\phl\forkjoin\Folder.class
 com\phl\namespace\People.class
@@ -128,7 +128,7 @@ com\phl\threadLocalAndThreadPool\MyThreadLocal.class
 com\phl\deadLock\DeadLock.class
 com\phl\hotloading\TestHotClassLoader.class
 com\phl\netty\delimiterBasedFrameDecoder\Client$1.class
-com\phl\test\Main.class
+com\phl\CASE\Main.class
 com\phl\list\list.class
 com\phl\format\FormatService.class
 com\phl\zk\DataMonitor.class

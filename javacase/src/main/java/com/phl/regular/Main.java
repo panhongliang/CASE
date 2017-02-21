@@ -46,10 +46,10 @@ public class Main {
     @Test
     public void matches(){
         String context="ddd";
-        Pattern p=Pattern.compile("(\\w)\\1{2}");
+        Pattern p=Pattern.compile("\\w{2,}");
         Matcher m=p.matcher(context);
         if (m.matches()){
-            System.out.println("group:"+m.group());
+            System.out.println("group:"+m.group(0));
             System.out.println("start:"+m.start());
             System.out.println("end:"+m.end());
         }else {

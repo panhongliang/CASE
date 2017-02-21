@@ -5,6 +5,7 @@ package com.phl.zk;
  */
 
 import org.apache.zookeeper.*;
+import org.apache.zookeeper.data.Stat;
 
 public class ZkNodeOperation {
     public static void main(String args[])throws Exception{
@@ -16,19 +17,23 @@ public class ZkNodeOperation {
                 System.out.println("watchedEvent = " + watchedEvent);
             }
         });
-/*
+
         //创建节点
         System.out.println("创建testDir1节点");
         Stat stat=zk.exists("/testDir1", true);
         if(stat==null){
-            zk.create("/testDir1", "testDir1".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+            zk.create("/testDir1", "testDir1".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
 
 
         //创建子节点
         System.out.println("\n创建testDir1节点的子节点");
-        zk.create("/testDir1/sub1", "sub1".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-        zk.create("/testDir1/sub2", "sub2".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        stat=zk.exists("/testDir1/sub1", true);
+        if(stat==null)
+        zk.create("/testDir1/sub1", "sub1".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        stat=zk.exists("/testDir1/sub2", true);
+        if(stat==null)
+        zk.create("/testDir1/sub2", "sub2".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
 
         //取出子节点列表
         System.out.println("\ntestDir1的子节点列表为："+zk.getChildren("/testDir1", true));
@@ -44,8 +49,13 @@ public class ZkNodeOperation {
         System.out.println("\n删除节点/testDir1/sub1");
         zk.delete("/testDir1/sub1", -1);
 
-        System.out.println("\ntestDir1的子节点列表为：" + zk.getChildren("/testDir1", true));*/
+        System.out.println("\ntestDir1的子节点列表为：" + zk.getChildren("/testDir1", true));
+        stat=zk.exists("/testDir1/sub1/ephemeral", true);
+        if(stat==null)
         zk.create("/testDir1/sub1/ephemeral","abc".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
+
+        stat=zk.exists("/testDir1/sub1/seq", true);
+        if(stat==null)
         zk.create("/testDir1/sub1/seq","abc".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL);
         zk.close();
         while (true){}

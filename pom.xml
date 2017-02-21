@@ -18,6 +18,7 @@
     <module>usethreadloader</module>
     <module>rabbitclient</module>
     <module>rabbitreceiver</module>
+      <module>zkclient</module>
   </modules>
 
   <dependencyManagement>

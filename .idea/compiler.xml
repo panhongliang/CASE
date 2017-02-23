@@ -31,6 +31,7 @@
         <module name="threadresource" />
         <module name="useresourse" />
         <module name="usethreadloader" />
+        <module name="zkclient" />
         <module name="zmodel" />
       </profile>
     </annotationProcessing>
@@ -46,6 +47,7 @@
       <module name="threadresource" target="1.5" />
       <module name="useresourse" target="1.5" />
       <module name="usethreadloader" target="1.5" />
+      <module name="zkclient" target="1.5" />
       <module name="zmodel" target="1.5" />
     </bytecodeTargetLevel>
   </component>

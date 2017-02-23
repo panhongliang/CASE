@@ -10,8 +10,26 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitclient/pom.xml" />
+        <option value="$PROJECT_DIR$/usethreadloader/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitreceiver/pom.xml" />
+        <option value="$PROJECT_DIR$/useresourse/pom.xml" />
+        <option value="$PROJECT_DIR$/loadresources/pom.xml" />
+        <option value="$PROJECT_DIR$/zmodel/pom.xml" />
+        <option value="$PROJECT_DIR$/javacase/pom.xml" />
+        <option value="$PROJECT_DIR$/amodel/pom.xml" />
+        <option value="$PROJECT_DIR$/threadresource/pom.xml" />
+        <option value="$PROJECT_DIR$/designmodel/pom.xml" />
+        <option value="$PROJECT_DIR$/zkclient/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" assert-keyword="false" jdk-15="false" project-jdk-name="1.7" project-jdk-type="JavaSDK" />
+  <component name="ZooKeeperConfig">
+    <option name="host" value="localhost" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="" />
+    <option name="enabled" value="true" />
+  </component>
 </project>

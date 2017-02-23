@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/threadresource/threadresource.iml" filepath="$PROJECT_DIR$/threadresource/threadresource.iml" />
       <module fileurl="file://$PROJECT_DIR$/useresourse/useresourse.iml" filepath="$PROJECT_DIR$/useresourse/useresourse.iml" />
       <module fileurl="file://$PROJECT_DIR$/usethreadloader/usethreadloader.iml" filepath="$PROJECT_DIR$/usethreadloader/usethreadloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zkclient/zkclient.iml" filepath="$PROJECT_DIR$/zkclient/zkclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/zmodel/zmodel.iml" filepath="$PROJECT_DIR$/zmodel/zmodel.iml" />
     </modules>
   </component>

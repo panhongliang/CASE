@@ -3,6 +3,7 @@ package com.phl.rabbitclient;
 /**
  * Created by panhongliang on 16/1/18.
  */
+import com.phl.config.Config;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -29,7 +30,10 @@ public class NewTask {
     }
     private static Channel init() throws Exception{
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost(Config.RabbitMq.HOST);
+        //远程主机需要创建用户和密码才能访问
+        factory.setUsername(Config.RabbitMq.USERNAME);
+        factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
         channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);

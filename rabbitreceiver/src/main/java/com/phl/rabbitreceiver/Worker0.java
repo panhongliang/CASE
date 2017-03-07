@@ -3,6 +3,7 @@ package com.phl.rabbitreceiver;
 /**
  * Created by panhongliang on 16/1/18.
  */
+import com.phl.config.Config;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
@@ -13,7 +14,10 @@ public class Worker0 {
     private static final String work="work0";
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost(Config.RabbitMq.HOST);
+        //远程主机需要创建用户和密码才能访问
+        factory.setUsername(Config.RabbitMq.USERNAME);
+        factory.setPassword(Config.RabbitMq.PASSWORD);
         final Connection connection = factory.newConnection();
         final Channel channel = connection.createChannel();
 

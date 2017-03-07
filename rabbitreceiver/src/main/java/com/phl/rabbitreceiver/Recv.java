@@ -1,5 +1,6 @@
 package com.phl.rabbitreceiver;
 
+import com.phl.config.Config;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
@@ -12,7 +13,10 @@ public class Recv {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost(Config.RabbitMq.HOST);
+        //远程主机需要创建用户和密码才能访问
+        factory.setUsername(Config.RabbitMq.USERNAME);
+        factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 

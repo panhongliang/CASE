@@ -1,0 +1,13 @@
+安装：
+rabbit依赖于erlang,首先要安装erlang的yum源
+rpm -Uvh http://packages.erlang-solutions.com/erlang-solutions-1.0-1.noarch.rpm
+rpm --import https://packages.erlang-solutions.com/rpm/erlang_solutions.asc
+然后安装rabbitmq
+yum install  rabbitmq-server-3.6.6-1.el7.noarch.rpm
+
+远程连接rabbitmq:
+在地用户用系统默认的用户guest连接，远程用户需要自己创建用户。
+新建立了一个用户root密码root，然后授予所有权限，使用下面的命令：
+rabbitmqctl add_user root root
+rabbitmqctl set_user_tags root administrator
+rabbitmqctl set_permissions -p / root ".*" ".*" ".*"

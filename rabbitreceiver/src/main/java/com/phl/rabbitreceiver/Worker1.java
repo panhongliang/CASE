@@ -16,10 +16,11 @@ public class Worker1 {
         factory.setHost("localhost");
         final Connection connection = factory.newConnection();
         final Channel channel = connection.createChannel();
-
-        channel.queueDeclare(TASK_QUEUE_NAME, true, false, false, null);
+        boolean durable=true;//队列持久化
+        channel.queueDeclare(TASK_QUEUE_NAME, durable, false, false, null);
         System.out.println(" [*] "+work+"Waiting for messages. To exit press CTRL+C");
 
+        //更加公平的接收任务，慢的worker接收更少的任务
         channel.basicQos(1);
 
         final Consumer consumer = new DefaultConsumer(channel) {

@@ -1,5 +1,6 @@
 package com.phl.rabbitclient;
 
+import com.phl.config.Config;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.Channel;
@@ -17,7 +18,10 @@ public class RPCClient {
 
     public RPCClient() throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost(Config.RabbitMq.HOST);
+        //远程主机需要创建用户和密码才能访问
+        factory.setUsername(Config.RabbitMq.USERNAME);
+        factory.setPassword(Config.RabbitMq.PASSWORD);
         connection = factory.newConnection();
         channel = connection.createChannel();
 

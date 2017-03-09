@@ -29,7 +29,7 @@ public class EmitLog_TOPIC {
 
             channel.basicPublish(EXCHANGE_NAME, severity, null, message.getBytes());
             System.out.println(" [x] Sent severity'" +severity+":"+ message + "'");
-            Thread.sleep(2000);
+            Thread.sleep(100);
         }
 
 

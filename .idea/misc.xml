@@ -21,6 +21,8 @@
         <option value="$PROJECT_DIR$/threadresource/pom.xml" />
         <option value="$PROJECT_DIR$/designmodel/pom.xml" />
         <option value="$PROJECT_DIR$/zkclient/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitmq-config/pom.xml" />
+        <option value="$PROJECT_DIR$/model-config/pom.xml" />
       </list>
     </option>
   </component>

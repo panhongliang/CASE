@@ -10,7 +10,6 @@ import com.rabbitmq.client.MessageProperties;
  * Created by panhongliang on 16/1/18.
  */
 public class Send {
-    private final static String QUEUE_NAME="hello";
     public static void main(String[] args) throws Exception {
 
         ConnectionFactory factory = new ConnectionFactory();
@@ -20,12 +19,17 @@ public class Send {
         factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
+        //queueDeclare时client和server和配置应该一样
         boolean durable=true;//队列持久化
-        channel.queueDeclare(QUEUE_NAME,durable , false, false, null);
+        channel.queueDeclare(Config.RabbitMq.QUEUE_NAME,durable , false, false, null);
+
+
         String message = "Hello World!";
-        //MessageProperties.PERSISTENT_TEXT_PLAIN消息持久化
-        channel.basicPublish("", QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, message.getBytes());
-        System.out.println(" [x] Sent '" + message + "'");
+        for(int i=0;i<100;i++) {
+            //MessageProperties.PERSISTENT_TEXT_PLAIN消息持久化
+            channel.basicPublish("", Config.RabbitMq.QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, (message+i).getBytes());
+            System.out.println(" [x] Sent '" + message +i+ "'");
+        }
         channel.close();
         connection.close();
     }

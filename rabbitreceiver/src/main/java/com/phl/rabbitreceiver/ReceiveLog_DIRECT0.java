@@ -20,13 +20,14 @@ public class ReceiveLog_DIRECT0 {
         factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-
+        //direct:特定binding key的消息进入特定binding key的队列
         channel.exchangeDeclare(EXCHANGE_NAME, "direct");
         String queueName = channel.queueDeclare().getQueue();
 
         System.err.println("Usage: ReceiveLogsDirect [error]");
 
 
+        //此处只关心error级别的日志（binding key为error）
         String argv0[]={"error"};
         for(String severity : argv0){
             channel.queueBind(queueName, EXCHANGE_NAME, severity);

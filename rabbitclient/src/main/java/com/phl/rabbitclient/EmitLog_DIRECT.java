@@ -21,12 +21,12 @@ public class EmitLog_DIRECT {
         factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-
+        //direct:特定binding key的消息进入特定binding key的队列
         channel.exchangeDeclare(EXCHANGE_NAME, "direct");
         while (true){
             String severity = getServrity();
             String message = getMessage();
-
+            //severity:routingKey(binding key)
             channel.basicPublish(EXCHANGE_NAME, severity, null, message.getBytes());
             System.out.println(" [x] Sent severity'" +severity+":"+ message + "'");
             Thread.sleep(2000);

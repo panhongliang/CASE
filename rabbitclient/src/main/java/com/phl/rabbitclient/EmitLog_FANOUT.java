@@ -22,13 +22,14 @@ public class EmitLog_FANOUT {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
+        //"fanout" 广播
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
 
-        String message = getMessage(argv);
-
-        channel.basicPublish(EXCHANGE_NAME, "", null, message.getBytes());
-        System.out.println(" [x] Sent '" + message + "'");
-
+        for(int i=0;i<10;i++) {
+            String message = getMessage(argv);
+            channel.basicPublish(EXCHANGE_NAME, "", null, (message+i).getBytes());
+            System.out.println(" [x] Sent '" + message + i+"'");
+        }
         channel.close();
         connection.close();
     }

@@ -8,9 +8,9 @@ import java.io.IOException;
 /**
  * Created by panhongliang on 16/1/18.
  */
-public class ReceiveLogs {
+public class ReceiveLogs_FANOUT1 {
     private static final String EXCHANGE_NAME = "logs";
-    private static final String node="node0";
+    private static final String node="node1";
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(Config.RabbitMq.HOST);
@@ -21,6 +21,12 @@ public class ReceiveLogs {
         Channel channel = connection.createChannel();
 
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+        /*no parameters to queueDeclare() we create a non-durable, exclusive, autodelete queue with a generated name:
+        Firstly, whenever we connect to Rabbit we need a fresh, empty queue.
+        To do this we could create a queue with a random name, or, even better - let the server choose a random queue name for us.
+         Secondly, once we disconnect the consumer the queue should be automatically deleted.
+        创建一个匿名的队列
+        */
         String queueName = channel.queueDeclare().getQueue();
         channel.queueBind(queueName, EXCHANGE_NAME, "");
 

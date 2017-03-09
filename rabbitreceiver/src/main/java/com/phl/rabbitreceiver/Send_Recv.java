@@ -4,12 +4,14 @@ import com.phl.config.Config;
 import com.rabbitmq.client.*;
 
 import java.io.IOException;
+import java.util.Random;
+
+import static java.lang.Thread.sleep;
 
 /**
  * Created by panhongliang on 16/1/18.
  */
-public class Recv {
-    private final static String QUEUE_NAME = "hello";
+public class Send_Recv {
 
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
@@ -19,18 +21,26 @@ public class Recv {
         factory.setPassword(Config.RabbitMq.PASSWORD);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        //queueDeclare时client和server和配置应该一样
+        boolean durable=true;//队列持久化
+        channel.queueDeclare(Config.RabbitMq.QUEUE_NAME, durable, false, false, null);
+        //接收任务更加合理，慢的client接收更少的任务
+        channel.basicQos(1);
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
-
+        final Random random=new Random();
         Consumer consumer = new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
                     throws IOException {
                 String message = new String(body, "UTF-8");
+                try {
+                    sleep(random.nextInt(5000));
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println(" [x] Received '" + message + "'");
             }
         };
-        channel.basicConsume(QUEUE_NAME, true, consumer);
+        channel.basicConsume(Config.RabbitMq.QUEUE_NAME, true, consumer);
     }
 }

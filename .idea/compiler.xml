@@ -26,7 +26,9 @@
         <module name="designmodel" />
         <module name="javacase" />
         <module name="loadresources" />
+        <module name="model-config" />
         <module name="rabbitclient" />
+        <module name="rabbitmq-config" />
         <module name="rabbitreceiver" />
         <module name="threadresource" />
         <module name="useresourse" />
@@ -41,7 +43,9 @@
       <module name="designmodel" target="1.5" />
       <module name="javacase" target="1.7" />
       <module name="loadresources" target="1.5" />
+      <module name="model-config" target="1.5" />
       <module name="rabbitclient" target="1.5" />
+      <module name="rabbitmq-config" target="1.5" />
       <module name="rabbitreceiver" target="1.5" />
       <module name="test" target="1.5" />
       <module name="threadresource" target="1.5" />

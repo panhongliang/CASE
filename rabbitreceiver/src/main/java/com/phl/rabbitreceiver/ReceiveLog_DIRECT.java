@@ -21,12 +21,13 @@ public class ReceiveLog_DIRECT {
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
 
+        //direct:特定binding key的消息进入特定binding key的队列
         channel.exchangeDeclare(EXCHANGE_NAME, "direct");
         String queueName = channel.queueDeclare().getQueue();
 
 
          System.err.println("Usage: ReceiveLogsDirect [info] [warning]");
-
+        //此处只关心info,warn级别的日志（binding key为info,warn）
         String argv0[]={"info","warn"};
         for(String severity : argv0){
             channel.queueBind(queueName, EXCHANGE_NAME, severity);

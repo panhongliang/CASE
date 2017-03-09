@@ -8,9 +8,9 @@ import java.io.IOException;
 /**
  * Created by panhongliang on 16/1/18.
  */
-public class ReceiveLogs1 {
+public class ReceiveLogs_FANOUT0 {
     private static final String EXCHANGE_NAME = "logs";
-    private static final String node="node1";
+    private static final String node="node0";
     public static void main(String[] argv) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost(Config.RabbitMq.HOST);
@@ -21,6 +21,7 @@ public class ReceiveLogs1 {
         Channel channel = connection.createChannel();
 
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+
         String queueName = channel.queueDeclare().getQueue();
         channel.queueBind(queueName, EXCHANGE_NAME, "");
 

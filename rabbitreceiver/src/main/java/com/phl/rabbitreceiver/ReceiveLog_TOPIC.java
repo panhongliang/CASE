@@ -5,6 +5,8 @@ import com.rabbitmq.client.*;
 
 import java.io.IOException;
 
+import static java.lang.Thread.sleep;
+
 /**
  * Created by panhongliang on 16/1/20.
  */
@@ -39,6 +41,11 @@ public class ReceiveLog_TOPIC {
                                        AMQP.BasicProperties properties, byte[] body) throws IOException {
                 String message = new String(body, "UTF-8");
                 System.out.println(" [x] Received '" + envelope.getRoutingKey() + "':'" + message + "'");
+                try {
+                    sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         };
         channel.basicConsume(queueName, true, consumer);

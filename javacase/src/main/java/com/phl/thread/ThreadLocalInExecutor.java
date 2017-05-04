@@ -7,7 +7,7 @@ import static java.lang.Thread.sleep;
 /**
  * Created by panhl on 2017-05-04.
  * ThreadLocal 在线程池中使用
- * 线程池共用线程，当线程池中的任务执行时，如果任务使用的是同一个线程，则从ThreadLocal同取到相同的值
+ * 线程池共用线程，当线程池中的任务执行时，如果不同的任务使用的是同一个线程执行，则从ThreadLocal同取到相同的值
  */
 public class ThreadLocalInExecutor {
     static ThreadLocal local=new ThreadLocal();

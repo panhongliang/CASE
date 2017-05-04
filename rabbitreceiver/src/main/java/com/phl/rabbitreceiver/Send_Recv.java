@@ -33,11 +33,7 @@ public class Send_Recv {
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
                     throws IOException {
                 String message = new String(body, "UTF-8");
-                try {
-                    sleep(random.nextInt(5000));
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+
                 System.out.println(" [x] Received '" + message + "'");
             }
         };

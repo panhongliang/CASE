@@ -16,20 +16,19 @@ public class ThreadJoin {
 }
 class FatherThread extends Thread {
 
-    private String s;
     public FatherThread(String s){
-        this.s=s;
+        super(s);
     }
     @Override
     public void run() {
-
+        final  Thread t=Thread.currentThread();
         for(int i=0;i<10;i++){
-            System.out.println(s+" print "+i);
+            System.out.println(Thread.currentThread().getName()+" print "+i);
             if(i==0){
-                SonThread sun=new SonThread();
+                final SonThread sun=new SonThread("son thread");
                 sun.start();
                 try {
-                    sun.join();
+                    sun.join(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -39,12 +38,24 @@ class FatherThread extends Thread {
 }
 class SonThread extends Thread {
 
+    public SonThread(String name){
+        super(name);
+    }
     @Override
     public void run() {
 
-        for(int i=0;i<100;i++){
-            System.out.println(" son print "+i);
+        while (true){
+
+            for(int i=0;i<100;i++){  try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+                System.out.println(Thread.currentThread().getName()+" "+i);
+            }
         }
+
     }
 }
 

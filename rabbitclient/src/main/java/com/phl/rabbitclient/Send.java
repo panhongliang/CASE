@@ -25,13 +25,14 @@ public class Send {
 
 
         String message = "Hello World!";
-        for(int i=0;i<100;i++) {
+        int i=0;
+        while (true) {
             //MessageProperties.PERSISTENT_TEXT_PLAIN消息持久化
-            channel.basicPublish("", Config.RabbitMq.QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, (message+i).getBytes());
+            channel.basicPublish("", Config.RabbitMq.QUEUE_NAME, MessageProperties.PERSISTENT_TEXT_PLAIN, (message+i++).getBytes());
             System.out.println(" [x] Sent '" + message +i+ "'");
         }
-        channel.close();
-        connection.close();
+      //  channel.close();
+       // connection.close();
     }
 
 

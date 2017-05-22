@@ -20,6 +20,7 @@
     <module>rabbitreceiver</module>
       <module>zkclient</module>
       <module>rabbitmq-config</module>
+      <module>disruptor</module>
   </modules>
 
   <dependencyManagement>

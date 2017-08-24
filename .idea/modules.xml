@@ -5,9 +5,11 @@
       <module fileurl="file://$PROJECT_DIR$/CASE.iml" filepath="$PROJECT_DIR$/CASE.iml" />
       <module fileurl="file://$PROJECT_DIR$/amodel/amodel.iml" filepath="$PROJECT_DIR$/amodel/amodel.iml" />
       <module fileurl="file://$PROJECT_DIR$/designmodel/designmodel.iml" filepath="$PROJECT_DIR$/designmodel/designmodel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disruptor/disruptor.iml" filepath="$PROJECT_DIR$/disruptor/disruptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/javacase/javacase.iml" filepath="$PROJECT_DIR$/javacase/javacase.iml" />
       <module fileurl="file://$PROJECT_DIR$/loadresources/loadresources.iml" filepath="$PROJECT_DIR$/loadresources/loadresources.iml" />
       <module fileurl="file://$PROJECT_DIR$/model-config/model-config.iml" filepath="$PROJECT_DIR$/model-config/model-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/opentsdb/opentsdb.iml" filepath="$PROJECT_DIR$/opentsdb/opentsdb.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitclient/rabbitclient.iml" filepath="$PROJECT_DIR$/rabbitclient/rabbitclient.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitreceiver/rabbitreceiver.iml" filepath="$PROJECT_DIR$/rabbitreceiver/rabbitreceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/test.iml" filepath="$PROJECT_DIR$/test.iml" />

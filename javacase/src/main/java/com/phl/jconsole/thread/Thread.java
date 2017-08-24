@@ -6,9 +6,9 @@ import java.io.InputStreamReader;
 /**
  * Created by Administrator on 2016-08-23.
  */
-public class ThreadTest {
+public class Thread {
     public static void createBusyThread(){
-        Thread thread=new Thread(new Runnable() {
+        java.lang.Thread thread=new java.lang.Thread(new Runnable() {
             @Override
             public void run() {
                 while (true){
@@ -20,7 +20,7 @@ public class ThreadTest {
     }
 
     public static void createLockThread(final Object lock){
-        Thread thread=new Thread(new Runnable() {
+        java.lang.Thread thread=new java.lang.Thread(new Runnable() {
             @Override
             public void run() {
                 try {

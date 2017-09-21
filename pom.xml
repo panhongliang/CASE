@@ -16,8 +16,6 @@
     <module>zmodel</module>
     <module>threadresource</module>
     <module>usethreadloader</module>
-    <module>rabbitclient</module>
-    <module>rabbitreceiver</module>
       <module>zkclient</module>
       <module>model-config</module>
       <module>disruptor</module>

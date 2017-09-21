@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="javacase:war">
-    <output-path>$PROJECT_DIR$/javacase/target</output-path>
-    <root id="archive" name="CASE.war">
-      <element id="artifact" artifact-name="javacase:war exploded" />
-    </root>
-  </artifact>
-</component>

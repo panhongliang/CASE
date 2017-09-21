@@ -20,8 +20,9 @@ public class HttpApiTest {
         System.out.println(DateUtil.formatToString(new Date(1502176319776L), DateUtil.YYYY_MM_DD_HH_MM));
         
         OpenTsdbHttpQueryClient client = new OpenTsdbHttpQueryClient("http://master:4242");
+
         final List<Filter> filters = new ArrayList<Filter>();
-        Filter f = new Filter();
+        /* Filter f = new Filter();
         f.setType("wildcard");
         f.setGroupBy(Boolean.TRUE);
         f.setTagk("cpu");
@@ -34,8 +35,8 @@ public class HttpApiTest {
         f1.setTagk("host");
         f1.setFilter("*");
         filters.add(f1);
-        
-        String res = client.queryData("sys.cpu.user", "2017-08-01 00:00:00", "2017-08-31 24:00:00",
+        */
+        String res = client.queryData("sys.cpu.user", "2017-08-30 00:00:00", "2017-08-31 24:00:00",
             filters, "sum", null);
         System.out.println(res);
         if (res == null) {

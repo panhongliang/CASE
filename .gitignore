@@ -3,3 +3,8 @@
 */*.class
 *.iml
 */workspace.xml
+*/compiler.xml
+*/encodings.xml
+.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml
+commoncollections/src/
+opentsdb/src/test/

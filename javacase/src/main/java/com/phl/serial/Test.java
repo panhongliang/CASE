@@ -6,6 +6,6 @@ package com.phl.serial;
  * @author:panhl
  * @date 2017/8/24 0024 10:12
  */
-public class Parent {
+public class Test {
     int c;
 }

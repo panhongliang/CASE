@@ -2,6 +2,8 @@ package com.phl.serial;
 
 import java.io.*;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Administrator on 2016-12-23.
@@ -27,10 +29,11 @@ public class JavaSerial  {
     public static void output()throws Exception {
         FileOutputStream fos = new FileOutputStream("D:\\t.tmp");
         ObjectOutputStream oos = new ObjectOutputStream(fos);
-
-       oos.writeObject(new Obj());
-      // oos.writeObject(new Date());
-
+        Obj o=new Obj();
+        HashMap<String,String> map=new HashMap<>();
+        map.put("d","e");
+        o.setMap(map);
+       oos.writeObject(o);
        oos.close();
     }
     public static void main(String[] args) throws Exception {

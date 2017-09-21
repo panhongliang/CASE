@@ -22,6 +22,7 @@
       <module>model-config</module>
       <module>disruptor</module>
       <module>opentsdb</module>
+      <module>commoncollections</module>
   </modules>
 
   <dependencyManagement>
@@ -35,7 +36,6 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>3.8.1</version>
-        <scope>CASE</scope>
       </dependency>
       <dependency>
         <version>4.4</version>

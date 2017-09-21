@@ -1,5 +1,7 @@
 package com.phl.queue;
 
+import java.util.PriorityQueue;
+
 /**
  * @Title:PriorityQueueMain
  * @Description:
@@ -8,4 +10,13 @@ package com.phl.queue;
  * @date 2017/9/20 0020 13:28
  */
 public class PriorityQueueMain {
+    public static void main(String[] args) {
+        PriorityQueue queue=new PriorityQueue();
+        queue.add(5);
+        queue.add(3);
+        queue.add(4);
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+        System.out.println(queue.poll());
+    }
 }

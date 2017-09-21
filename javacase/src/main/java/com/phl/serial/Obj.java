@@ -1,14 +1,24 @@
 package com.phl.serial;
 
 import java.io.Serializable;
+import java.util.HashMap;
 
 /**
  * Created by Administrator on 2016-12-23.
  */
-public class Obj implements Serializable{
+public class Obj   implements Serializable{
     int a;
-    String b;
-    Obj o;
+    String b="12a我";
+    Test t;
+    HashMap<String,String> map;
+
+    public HashMap<String, String> getMap() {
+        return map;
+    }
+
+    public void setMap(HashMap<String, String> map) {
+        this.map = map;
+    }
 
     public int getA() {
         return a;
@@ -26,11 +36,11 @@ public class Obj implements Serializable{
         this.b = b;
     }
 
-    public Obj getO() {
-        return o;
+    public Test getT() {
+        return t;
     }
 
-    public void setO(Obj o) {
-        this.o = o;
+    public void setT(Test t) {
+        this.t = t;
     }
 }

@@ -8,4 +8,13 @@ package com.phl.serial;
  * @date 2017/8/24 0024 14:44
  */
 public class Parent {
+    String d;
+
+    public String getD() {
+        return d;
+    }
+
+    public void setD(String d) {
+        this.d = d;
+    }
 }

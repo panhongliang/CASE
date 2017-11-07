@@ -19,8 +19,8 @@
       <module>zkclient</module>
       <module>model-config</module>
       <module>disruptor</module>
-      <module>opentsdb</module>
       <module>commoncollections</module>
+      <module>mapper-reduce</module>
   </modules>
 
   <dependencyManagement>
@@ -83,7 +83,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <build>
-    <finalName>CASE</finalName>
-  </build>
+
 </project>

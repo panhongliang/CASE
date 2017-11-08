@@ -5,6 +5,8 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
+import org.apache.hadoop.mapreduce.MRJobConfig;
+import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
@@ -39,11 +41,11 @@ public class JobClient {
         /**reduce的两个参数类型**/
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-
         //可以自定义partitionerClass用于完成特殊功能
         //job.setPartitionerClass();
         //可以设置reduce数量，如果 自定义了partionerClass，此时需要考虑是否要设置reduce num
         //job.setNumReduceTasks();
+
 
         FileInputFormat.setInputPaths(job,new Path("/task_input/workcount/"));
         FileOutputFormat.setOutputPath(job,new Path("/task_output/wordcount"));

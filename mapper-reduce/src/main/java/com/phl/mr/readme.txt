@@ -22,3 +22,9 @@ map方法：
  相同hashcode的key会被送到同一个reduce中,
  相同key的value，会被放在Iterable中一次调用reduce,
  一个reduce节点会产生一个结果文件，可以使用这点，使相关联的key分配到同一个reduce上，然后产生的结果放在同一个文件中。
+
+
+ 注：当job.setNumReduceTasks(1);时分区方法将不起作用，因为所有的中间结果将汇总到一个reduce上。
+
+ 分区内部数据是按key排序，所以reduce的结果文件中的数据是按key排序
+

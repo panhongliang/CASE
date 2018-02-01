@@ -12,23 +12,20 @@ public class WeakHashMapTest {
         int size = 1000;
         Key[] keys = new Key[size];
         WeakHashMap<Key,Value> whm = new WeakHashMap<Key,Value>();
-        Key key4=null;
+        int j=0;
         for(int i=0;i<size;i++) {
             Key k =null;
-            if(i==4){
-                key4=new Key(Integer.toString(i));
-                k=key4;
+            k=new Key(Integer.toString(i));
+            if(i%5==0){
+                //能被5整除的key都被keys强引用，不会被gc
+                keys[j++]=k;
             }
-            k = new Key(Integer.toString(i));
             Value v = new Value(Integer.toString(i));
             whm.put(k,v);
         }
-
         System.gc();
-
         try {
-            Thread.sleep(8000);  //把处理器的时间让给垃圾回收器进行垃圾回收
-            System.out.println(whm.get(key4));
+            Thread.sleep(20000);  //把处理器的时间让给垃圾回收器进行垃圾回收
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -61,6 +58,7 @@ class Key {
     }
 
     public void finalize() {
+        //打印出来的id不会含有5的倍数的数
         System.out.println("Finalizing Key "+id);
     }
 }
